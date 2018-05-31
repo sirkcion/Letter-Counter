@@ -1,5 +1,1 @@
-result = 0
-for c in input('Enter Phrase\n').upper():
-    if c.isalpha():
-        result = result + ord(c) - 64
-print(result)
+print(sum(map(lambda c: ord(c) - 64, filter(lambda x: x.isalpha(), input('Enter Phrase\n').upper()))))
